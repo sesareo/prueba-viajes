@@ -33,3 +33,7 @@ hr {
     margin-left: 14%;
     margin-right: 49%;
 }
+
+.columnas, .tarjetas {
+    margin-bottom: 5em;
+}
