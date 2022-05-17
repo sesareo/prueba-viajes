@@ -12,11 +12,7 @@ body {
     background-color: black;
 }
 
-p {
-    text-align: center;
-}
-
-.icono-texto {
+p, .icono-texto {
     text-align: center;
 }
 
@@ -30,10 +26,14 @@ hr {
 }
 
 #viajes {
-    margin-left: 14%;
+    margin-left: 13%;
     margin-right: 49%;
 }
 
 .columnas, .tarjetas {
     margin-bottom: 5em;
+}
+
+html {
+    scroll-behavior: smooth;
 }

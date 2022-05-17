@@ -16,8 +16,8 @@
 
 <body>
     <!--  Barra navegación -->
-    <header class="header">
-        <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <header id="navegacion" class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/assets/img/viajes.svg" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,13 +31,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="#quienes">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
+                            <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <!-- Carrusel -->
-    <main>
+    <main id="carrusel">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -70,12 +70,11 @@
             </button>
         </div>
     </main>
-
     <!-- Quienes somos -->
     <br>
-    <p>¿Quienes somos?</p>
-    <hr class="bg-info" style="width:87%" size="3">
-    <section class="columnas">
+    <section id="quienes" class="columnas d-none d-sm-block">
+        <p>¿Quienes somos?</p>
+        <hr class="bg-info" style="width:87%" size="3">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -108,24 +107,21 @@
                 </div>
             </div>
         </div>
-
-
     </section>
-
     <!-- Destacados -->
     <br>
-    <p>Destacados</p>
+    <p id="destacados">Destacados</p>
     <hr class="bg-info" style="width:87%" size="3">
-    <section class="tarjetas mt-2">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="container-fluid m-3">
+        <div class="row row-col-lg-12 row-col-md-8 row-col-sm-4 row-col-xs-4 g-4">
             <div class="col">
                 <div class="card bg-info text-white" style="width: 18rem;">
                     <img src="/assets/img/card1.jpg" class="card-img-top" alt="Lago en el sur chileno">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor sit title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +140,8 @@
                     <img src="/assets/img/card3.jpg" class="card-img-top" alt="Laguna en el desierto">
                     <div class="card-body">
                         <h5 class="card-title">A few ipsum dolor sit</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
                             the card's content.</p>
                     </div>
                 </div>
@@ -154,17 +151,17 @@
                     <img src="/assets/img/card4.jpg" class="card-img-top" alt="Sendero en un bosque frondoso">
                     <div class="card-body">
                         <h5 class="card-title">Something in the way</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Formulario de contacto -->
     <br>
-    <p>Contacto</p>
+    <p id="contacto">Contacto</p>
     <hr class="bg-info" style="width:87%" size="3">
     <div class="container">
         <div data-tf-widget="WGjBxape" data-tf-iframe-props="title=Contact Form (copy)" data-tf-medium="snippet"
@@ -173,19 +170,19 @@
     </div>
     <br>
     <!-- Footer redes sociales -->
-    <footer class="bg-info text-white">
-        <div class="container">
-            <div id="viajes">
-                <h3 class="text-center text-white" id="viajeschile">VIAJES CHILE</h3>
-            </div>
-            <div id="iconos">
-                <i class="fa-brands fa-github-square fa-xl"></i>
-                <i class="fa-brands fa-linkedin fa-xl ms-2"></i>
-                <i class="fa-brands fa-twitter-square fa-xl ms-2"></i>
-                <i class="fa-brands fa-facebook-square fa-xl ms-2"></i>
-            </div>
+    <footer class="container-fluid bg-info text-white">
+        <div id="viajes">
+            <h3 class="text-center text-white">VIAJES CHILE</h3>
         </div>
+        <div id="iconos">
+            <i class="fa-brands fa-github-square fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl ms-2"></i>
+            <i class="fa-brands fa-twitter-square fa-xl ms-2"></i>
+            <i class="fa-brands fa-facebook-square fa-xl ms-2"></i>
+        </div>
+        <br>
     </footer>
+    <br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
